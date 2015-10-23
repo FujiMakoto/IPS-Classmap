@@ -6,6 +6,10 @@ By maintaining and actively using a proper error code scheme, you can easily and
 
 This script was designed to be (mostly) compatible with Invison Power Services' own error code schema.
 
+You can see a quick example of the scripts output in [FujiMakoto/IPS-Faker](https://github.com/FujiMakoto/IPS-Faker),
+* https://github.com/FujiMakoto/IPS-Faker/blob/master/data/class_ids.md
+* https://github.com/FujiMakoto/IPS-Faker/blob/master/data/class_ids.txt
+
 ## Installation
 To install and utilize this script, just upload classmap.php to your applications root directory. For example, */srv/http/ips/applications/yourappdir/classmap.php*
 
