@@ -12,9 +12,9 @@ To install and utilize this script, just upload classmap.php to your application
 Then just execute the script from the command line. A map of class ID's should be outputted to your terminal and saved in your applications data directory.
 
 ## Error Formatting
-The recommended format for error codes (which is the format used by IPS) is *ABC/D*
+The recommended format for error codes (which is the format used by IPS) is **ABC/D**
 
-*A* is a number 1-5 indicating the severity,
+**A** is a number 1-5 indicating the severity,
 
 | Severity | Description                                                                                               | Examples                                                                                         |
 | -------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -22,11 +22,11 @@ The recommended format for error codes (which is the format used by IPS) is *ABC
 | 2        | Action cannot be performed. Will not happen in normal clicking around, but may happen if a URL is shared. | User does not have permission to access requested page; Page doesn't exist.                      |
 | 3        | Action cannot be performed. Will not happen in normal use.                                                | Secure key doesn't match; User submitted a value for a select box that wasn't in the select box. |
 | 4        | Configuration error that may happen if the admin hasn't set things up properly.                           | Uploads directory isn't writable; Facebook application data was rejected.                        |
-| 5        | Any error that should *never* happen.                                                                     | No login modules exist; Module doesn't have a defined default section.                           |
+| 5        | Any error that should **never** happen.                                                                     | No login modules exist; Module doesn't have a defined default section.                         |
 
-*B* is a short string indicating the application. You should try and make this unique, but limit it to roughly 3-5 characters.
+**B** is a short string indicating the application. You should try and make this unique, but limit it to roughly 3-5 characters.
 
-*C* is a 3-digit number indicating the class in which the error occurred. ID numbers are split into range groups of 100 depending on the class type,
+**C** is a 3-digit number indicating the class in which the error occurred. ID numbers are split into range groups of 100 depending on the class type,
 
 | Type       | Min | Max |
 | ---------- | --- | --- |
@@ -41,7 +41,7 @@ The recommended format for error codes (which is the format used by IPS) is *ABC
 | Misc       | 900 | 999 |
 If more than 100 files are present in any type, the ID number will reset with a suffix of A, B, C, and so on.
 
-*D* is then an identifier error within the class. The first error code in the class is given 1, the second is 2, and so on.
+**D** is then an identifier error within the class. The first error code in the class is given 1, the second is 2, and so on.
 
 ### General Tips
 * Use descriptive error messages and make use of the ability to show a different error message to admins where appropriate. If it's a severity 4 error, you probably want to show an admin message.
