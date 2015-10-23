@@ -15,6 +15,7 @@ Then just execute the script from the command line. A map of class ID's should b
 The recommended format for error codes (which is the format used by IPS) is *ABC/D*
 
 *A* is a number 1-5 indicating the severity,
+
 | Severity | Description                                                                                               | Examples                                                                                         |
 | -------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | 1        | User does something that is not allowed. Can happen in normal use.                                        | User did not fill in a required form element.                                                    |
@@ -26,6 +27,7 @@ The recommended format for error codes (which is the format used by IPS) is *ABC
 *B* is a short string indicating the application. You should try and make this unique, but limit it to roughly 3-5 characters.
 
 *C* is a 3-digit number indicating the class in which the error occurred. ID numbers are split into range groups of 100 depending on the class type,
+
 | Type       | Min | Max |
 | ---------- | --- | --- |
 | Sources    | 100 | 199 |
